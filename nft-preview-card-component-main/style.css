@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+.container {
+    max-width: 22rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+.main-img {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.main-img img {
+    width: 100%;
+    display: block;
+}
+.overlay-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+    
+}
+.overlay-img img {
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+}
+.main-img:hover .overlay-img {
+    display: block;
+}
+.card-text a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    display: inline-block;
+
+}
+.card-text a:hover {
+    color: hsl(178, 100%, 50%);
+}
+p {
+    color: hsl(215, 51%, 70%);
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.ethereum, .time {
+    display: flex;
+    align-items: center;
+}
+.ethereum p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 0.4rem;
+}
+.time p {
+    padding-left: 0.4rem;
+}
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+.author {
+    display: flex;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+.author img {
+    height: 1.9rem;
+    width: 1.9rem;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    margin-right: 1rem;
+}
+.author p a.name{
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.author p a.name:hover {
+    color: hsl(178, 100%, 50%);
+}
+.attribution {
+    color: white;
+}
+.attribution a {
+    color: aqua;
+    text-decoration: none;
+}
+.attribution a:hover {
+    color: deepskyblue;
+}
+
